@@ -1,5 +1,31 @@
 [
   {
+    "version": "1.77.1",
+    "date": "2026-11-08",
+    "title": "Improved query parameter grouping and version display",
+    "content": [
+      {
+        "type": "paragraph",
+        "text": "This release refines how deep-object query parameters appear in the documentation and fixes version identifier formatting for non-semantic version strings."
+      },
+      {
+        "type": "list",
+        "items": [
+          "Deep-object query parameters with expandable fields now collapse into a single group row, making parameter lists cleaner and easier to scan.",
+          "Version identifiers display exactly as provided in your OpenAPI document, preserving commit hashes and custom formats without adding a v prefix.",
+          "Expanded parameter groups stay open when navigating between fields, keeping your workflow smooth.",
+          "Required status for nested fields now reflects parent optionality, showing the true requirement chain."
+        ],
+        "ordered": false
+      },
+      {
+        "type": "href",
+        "href": "https://github.com/scalar/scalar/blob/main/packages/api-reference/CHANGELOG.md#1771",
+        "label": "Read full release notes"
+      }
+    ]
+  },
+  {
     "version": "1.77.0",
     "date": "2026-11-05",
     "title": "Custom authentication per document and extension rendering improvements",

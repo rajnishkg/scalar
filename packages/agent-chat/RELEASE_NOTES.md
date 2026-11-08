@@ -9,6 +9,19 @@
   on every release - edits made directly here will be overwritten.
 -->
 
+## 0.12.51 (2026-11-08)
+
+### Require approval before executing AI-generated requests
+
+This release adds a critical security improvement that protects your API credentials and data when using Ask AI to generate requests.
+
+- All AI-generated requests now require explicit approval before execution, including GET requests that previously ran automatically.
+- Request previews show the resolved destination and method before you approve, so you can verify where your credentials will be sent.
+- AI-supplied URLs are validated and rejected to prevent credentials from being sent to unauthorized destinations.
+- APIs without configured servers now show a clear error instead of accepting arbitrary destinations from the model.
+
+[Read full release notes](https://github.com/scalar/scalar/blob/main/packages/agent-chat/CHANGELOG.md#01251)
+
 ## 0.12.50 (2026-11-05)
 
 ### Security hardening and agent key document fix
